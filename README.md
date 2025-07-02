@@ -1,1 +1,1 @@
-# PV Forecast
+# Solar Forecast
