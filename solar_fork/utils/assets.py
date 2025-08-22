@@ -1,6 +1,7 @@
-from sklearn.metrics import mean_squared_error, mean_absolute_error
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # --------------------------------------------------------
 # 4. Evaluation and plot

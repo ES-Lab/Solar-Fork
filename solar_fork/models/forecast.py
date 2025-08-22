@@ -2,11 +2,13 @@ from ..models.nn import *
 
 
 class ForecastModel:
-    def __init__(self, name, seq_length, input_dim):
+    def __init__(self, name, seq_length, input_dim, load_model=None):
         self.name = name
         self.seq_length = seq_length
         self.input_dim = input_dim
         self.model = self.build_model()
+        if load_model:
+            self.load_model(load_model)
 
     def build_model(self):
         if self.name == "gru":
@@ -30,8 +32,12 @@ class ForecastModel:
         history = self.model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_split=validation_split, verbose=1)
         return history
 
-    def predict(self, X_test, y_test):
+    def predict(self, X_test):
         if self.name == "ann": X_test = X_test.reshape(X_test.shape[0], -1)
         return self.model.predict(X_test)
-    
 
+    def save_model(self, filepath):
+        self.model.save(filepath)
+
+    def load_model(self, filepath):
+        self.model = self.model.load_model(filepath)

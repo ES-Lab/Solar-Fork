@@ -30,9 +30,11 @@ class SeqDataset:
         for i in range(len(self.X_scaled) - seq_length):
             X_seq.append(self.X_scaled[i:i+seq_length])
             y_seq.append(self.y_scaled[i+seq_length])
+        X_seq = np.array(X_seq)
+        y_seq = np.array(y_seq)
         # print sequence shapes
         print(f"Sequence shapes: X_seq: {X_seq.shape}, y_seq: {y_seq.shape}")
-        return np.array(X_seq), np.array(y_seq)
+        return X_seq, y_seq
 
     def split_data(self, split_ratio):
         self.split_index = int(split_ratio * len(self.X_seq))
