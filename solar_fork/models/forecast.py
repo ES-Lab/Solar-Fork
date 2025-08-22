@@ -1,6 +1,5 @@
 from ..models.nn import *
 
-
 class ForecastModel:
     def __init__(self, name, seq_length, input_dim, load_model=None):
         self.name = name
