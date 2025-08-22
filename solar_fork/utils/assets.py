@@ -1,5 +1,6 @@
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # --------------------------------------------------------
 # 4. Evaluation and plot
@@ -36,10 +37,8 @@ def evaluate_and_plot (model, dataset):
     df_result_error.to_csv(f'{model.name} Forecast Result-Errors.csv')
     df_result.to_csv(f'{model.name} Forecast Result.csv')
 
-
-
     #prepare for plotting
-    timestamps_test = df.index[seq_length + split_index:]
+    timestamps_test = dataset.df.index[dataset.seq_length + dataset.split_index:]
     ts=timestamps_test.to_numpy()
     y_test_orig=y_test_orig.reshape(-1)
     a=30*56 #start_index
@@ -53,14 +52,14 @@ def evaluate_and_plot (model, dataset):
     #plot
     plt.figure(figsize=(18, 6))
     plt.plot(ts_trunc, y_test_orig_trunc, label='Measurement')
-    plt.plot(ts_trunc, y_pred_orig_trunc, label=f'Prediction by {name}')
+    plt.plot(ts_trunc, y_pred_orig_trunc, label=f'Prediction by {model.name}')
     plt.legend()
-    plt.title(f'Forecast by {name}')
+    plt.title(f'Forecast by {model.name}')
     plt.xlabel('Time')
     plt.ylabel('PV Power [W]')
     plt.xticks(ticks=range(0, len(ts_trunc), tick_show), labels=[ts_trunc[i] for i in range(0, len(ts_trunc), tick_show)],rotation=45)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(f'{name} Forecast.png')
+    plt.savefig(f'{model.name} Forecast.png')
     plt.show()
     return nRMSE, nMAE 

@@ -35,9 +35,9 @@ class SeqDataset:
         return np.array(X_seq), np.array(y_seq)
 
     def split_data(self, split_ratio):
-        split_index = int(split_ratio * len(self.X_seq))
-        X_train, X_test = self.X_seq[:split_index], self.X_seq[split_index:]
-        y_train, y_test = self.y_seq[:split_index], self.y_seq[split_index:]
+        self.split_index = int(split_ratio * len(self.X_seq))
+        X_train, X_test = self.X_seq[:self.split_index], self.X_seq[self.split_index:]
+        y_train, y_test = self.y_seq[:self.split_index], self.y_seq[self.split_index:]
         # print split results
         print(f"Data split: Train: {X_train.shape}, Test: {X_test.shape}")
         return X_train, y_train, X_test, y_test
