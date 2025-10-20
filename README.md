@@ -2,7 +2,8 @@
 
 ### Repo Structure
 
-solar_fork/│
+```
+solar_fork/
 │
 ├── models/
 │   ├── forecast.py
@@ -35,3 +36,4 @@ solar_fork/│
         │   ├── Function: create_sequences()
         │   ├── Function: split_data()
     ├── data_UT_clean.csv
+```
