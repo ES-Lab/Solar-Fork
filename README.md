@@ -1,5 +1,6 @@
 # Solar Forecast
 
+This is a work in progress ... The repo includes sequential learning models for solar PV forecast; model tuning,... we keep updating the repo
 ### Repo Structure
 
 ```
