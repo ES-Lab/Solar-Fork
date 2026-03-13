@@ -40,6 +40,6 @@ solar_fork/
 ```
 
 ## Citation
-```python
+```bash
 [1] E. Shirazi and A. H. Ardakani, "Enhancing Convolutional Neural Network Performance for Forecasting in Energy Systems via Hyperparameter Tuning," 2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe), Valletta, Malta, 2025, pp. 1-5, doi: 10.1109/ISGTEurope64741.2025.11305680.
 ```
