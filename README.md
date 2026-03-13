@@ -39,23 +39,9 @@ solar_fork/
     ├── data_UT_clean.csv
 ```
 
-## Citation
-```bash
-[1] E. Shirazi and A. H. Ardakani, "Enhancing Convolutional Neural Network Performance for Forecasting in Energy Systems via Hyperparameter Tuning," 2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe), Valletta, Malta, 2025, pp. 1-5, doi: 10.1109/ISGTEurope64741.2025.11305680.
-```
 
 ## Citation
+[1] E. Shirazi and A. H. Ardakani, *How Much Attention to Pay? Attention-Enhanced Sequential Learning Models,* 2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe), Valletta, Malta, 2025, pp. 1-5, doi: 10.1109/ISGTEurope64741.2025.11305453.
 
-[1] E. Shirazi and A. H. Ardakani,  
-"Enhancing Convolutional Neural Network Performance for Forecasting in Energy Systems via Hyperparameter Tuning,"  
-2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe),  
-Valletta, Malta, 2025, pp. 1–5.  
-https://doi.org/10.1109/ISGTEurope64741.2025.11305680
+[2] E. Shirazi and A. H. Ardakani, *Enhancing Convolutional Neural Network Performance for Forecasting in Energy Systems via Hyperparameter Tuning,* 2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe), Valletta, Malta, 2025, pp. 1-5, doi: 10.1109/ISGTEurope64741.2025.11305680.
 
-
-## Citation
-
-[1] E. Shirazi and A. H. Ardakani,  
-*Enhancing Convolutional Neural Network Performance for Forecasting in Energy Systems via Hyperparameter Tuning*,  
-2025 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT Europe), Valletta, Malta, 2025.  
-https://doi.org/10.1109/ISGTEurope64741.2025.11305680
